@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -17,8 +18,13 @@ public class CrossBrowser {
 				
 		if(browser.equalsIgnoreCase("Chrome")) {
 			LoggerLoad.info("Testing in Chrome browser");
+			ChromeOptions ops = new ChromeOptions();
+			
+
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			
+			ops.addArguments("--remote-allow-origins=*");
+			driver = new ChromeDriver(ops);
 		}
 		
 		else if(browser.equalsIgnoreCase("Firefox")) {
