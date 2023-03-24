@@ -44,6 +44,8 @@ public class ConfigReader {
 				
 		}
 	
+	
+	
 	//Main url
 	public static String getApplicationUrl() {
 		String url = properties.getProperty("url");
@@ -64,6 +66,16 @@ public class ConfigReader {
 		
 	}
 	
+	//Navigation
+	public static String geturl(String pagename) {
+		String url = properties.getProperty(pagename);
+		if (url != null)
+			return url;
+		else
+			throw new RuntimeException(pagename + " url not specified in the Configuration.properties file.");
+	}
+	
+	
 	//Register
 	public static String getRegistrationPage() {
 		String registrationPage = properties.getProperty("registrationPage");
@@ -82,6 +94,24 @@ public class ConfigReader {
 			throw new RuntimeException("Sign In page url not specified in the config.properties file");
 		
 	}
+	
+	//Tree
+	public static String getTreePage() {
+		String treePage = properties.getProperty("Treehome");
+		if(treePage != null)
+			return treePage;
+		else
+			throw new RuntimeException("Tree page url not specified in the config.properties file");
+	}
+	public static String getTryEditor() {
+		String tryEditor = properties.getProperty("tryeditor");
+		if(tryEditor != null)
+			return tryEditor;
+		else
+			throw new RuntimeException("Try editor url not specified in the config.properties file");
+		
+	}
+	
 	
 	
 }
