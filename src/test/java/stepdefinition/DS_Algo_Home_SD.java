@@ -2,6 +2,7 @@ package stepdefinition;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.IOException;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.WebDriver;
@@ -77,43 +78,18 @@ public class DS_Algo_Home_SD {
 	    	
 	    }
 	}
-	//@Given("The user opens home page")
-	//public void the_user_is_on_homepage() {
-	//	
-	//}
-
-	@When("The user clicks {string}")
+		@When("The user clicks {string}")
 	public void the_user_clicks(String string) throws Throwable {
-		LoggerLoad.info("User clicks sign in link");
-		homePage.signinClick();
+		Thread.sleep(1000);
+		homePage.registerClick();
 	}
 
-	
-	
-	//@When("The user clicks sign in")
-	//public void the_user_clicks_sign_in(String string) {
-	//	LoggerLoad.info("User clicks sign in link");
-	//	homePage.signinClick();
-	   
-	//}
-
-	@Then("The user should be redirected to Sign in page")
-	public void the_user_should_be_redirected_to_sign_in_page() {
-	    LoggerLoad.info("User directed to sign in page");
-	    String title = homePage.signinPage();
-	    assertEquals(title,"Login");
-	        
-	    		
-	}
-	@When("The user clicks register")
-	public void the_user_clicks_register(String string) {
-	   assertEquals(true,true);
-	}
-
-	@Then("The user should be redirected to Register form")
+	@Then("The user should be redirected to register form")
 	public void the_user_should_be_redirected_to_register_form() {
-		assertEquals(true,true);
-	   
+		String title = homePage.getTitle();
+		   LoggerLoad.info("USer is on "+title+" page");
+			assertEquals(title,"Registration");
 	}
+	
 
 }

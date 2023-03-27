@@ -31,6 +31,7 @@ public class register_page {
 	By confirmPassword = By.id("id_password2");
 	By registerBtn = By.xpath("//input[@value ='Register']");
 	By alertMessage = By.xpath("//div[@class='alert alert-primary']");
+	By signOut = By.xpath("//a[text()='Sign out']");
 
 	public void openRegisterPage() throws IOException {
 
@@ -117,5 +118,16 @@ public class register_page {
 		}
 	}
 	
+	public void clickSignOut() {
+		driver.findElement(signOut).click();
+	}
 	
+	public void signedInAlert() {
+		try {
+			String alert=driver.findElement(alertMessage).getText();
+			LoggerLoad.info("Alert message: "+alert);
+		}catch(NoSuchElementException e) {
+			LoggerLoad.info("No such element");
+		}
+	}
 }
