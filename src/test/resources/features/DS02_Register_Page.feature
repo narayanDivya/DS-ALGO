@@ -1,21 +1,4 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
+
 @Register
 Feature: Register_Page
   
@@ -96,10 +79,9 @@ Feature: Register_Page
   When  The user enters a valid "username" and "password" and "password confirmation"
       
       | username     | password  | password confirmation |
-      | Numpy@sdet101_12 | testsdet101 | testsdet101 |
+      | Numpy@sdet101_13 | testsdet101 | testsdet101 |
   Then The user should be redirected to Homepage with the message "New Account Created. You are logged in as <username>"
-      
-      
-  
+  When The user clicks on sign out
+  Then The user is signed out
 
  
