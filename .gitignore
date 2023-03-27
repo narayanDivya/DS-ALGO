@@ -27,3 +27,6 @@ logs/
 target/
 test-output/
 *.tmp
+ExtentReports/Reports/HtmlReport/ExtentHtml.html
+ExtentReports/Reports/PDFReport/ExtentPDF.pdf
+ExtentReports/Reports/Spark.html
