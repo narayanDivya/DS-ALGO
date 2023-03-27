@@ -8,9 +8,9 @@ Feature: Home_Page
     Given The user opens DS Algo portal link
     When The user clicks the "Get Started" button
     Then The user should be redirected to homepage
-  #Added  
+   
     
-  @tag2 @Home_TC_02
+   @Home_TC_02
   Scenario Outline: User is on Home page and click getstarted link on  home page without sign in
     Given The user is on Home page
     When The user clicks on Get Started link on homepage "<option>" without login
@@ -18,7 +18,7 @@ Feature: Home_Page
       
     
         
-  @tag2 @Home_TC_03
+   @Home_TC_03
   Scenario Outline: User is on Home page and click on dropdown without sign in
     Given The user is on Home page
     When  The user clicks on dropdown "<option>" without login
@@ -26,9 +26,9 @@ Feature: Home_Page
       
     
    
-   @tag3 @Home_TC_04
-  Scenario: User is on Home page and click on sign in
+    @Home_TC_04
+  Scenario: User is on Home page and click on register
    
-    When  The user clicks "Sign in"
-    Then The user should be redirected to Sign in page
+    When  The user clicks "Register"
+    Then The user should be redirected to register form
   

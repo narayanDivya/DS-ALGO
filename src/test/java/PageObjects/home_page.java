@@ -25,7 +25,7 @@ public class home_page {
 		By username = By.id("id_username");
 		By password = By.id("id_password");
 		By loginbtn = By.xpath("//input[@value='Login']");
-		By Register = By.linkText("Register!");
+		By Register = By.xpath("//a[text() = ' Register ']");
 		By errormsg = By.xpath("//div[contains(text(),'You are not logged in')]");
 		
 		// Dropdown

@@ -17,7 +17,7 @@ public class DS_Algo_Register_SD {
 	WebDriver driver;
 	register_page regpage = new register_page();
 	
-	@Given("The user opens DS Algo portal link for register test")
+	 @Given("The user opens DS Algo portal link for register test")
 	public void the_user_opens_register_page() throws IOException {
 		LoggerLoad.info("Open DSAlgo portal for register test ");
 		regpage.openRegisterPage();
@@ -156,7 +156,20 @@ public class DS_Algo_Register_SD {
 
 	@Then("The user should be redirected to Homepage with the message {string}")
 	public void the_user_should_be_redirected_to_homepage_with_the_message(String string) {
-	    
+	    regpage.signedInAlert();
 	}  
+	
+	@When("The user clicks on sign out")
+	public void the_user_clicks_on_sign_out() {
+	    regpage.clickSignOut();
+	}
+
+	@Then("The user is signed out")
+	public void the_user_is_signed_out() {
+		regpage.signedInAlert();
+	   
+	}
+
+	
 
 }
