@@ -8,15 +8,19 @@ Feature: Graph page DS_ALGO
 	Then The user is redirected to the homepage
 	
 	@Graph001
-    Scenario: Validate "Graph - Graph"
+    Scenario: Validate "Graph page"
     Given The user is on the "home page" after logged in
     When The user select Graph item from the drop down menu
     Then The user should be directed to Graph main Page
     When The user clicks on the Graphs link
 	  Then The user should then be directed to Graphs Page
+	  
+	  Scenario: Validate "Graph - Graph"
 	  Given The user is on the "Graphs" after logged in
 	  When The user clicks "Try Here" button in "Graphs" page
 	  Then The user should be redirected to a page having an tryEditor with a Run button to test
+	   When The user inputs an invalid python code
+	  Then The user is presented with an error message
 	  When The user inputs a python code
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for graphs
@@ -33,4 +37,5 @@ Feature: Graph page DS_ALGO
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for graphs
 	  And User navigates back to Graph page
+	  Then User navigates to home page
 	  
