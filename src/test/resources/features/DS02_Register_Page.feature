@@ -79,7 +79,7 @@ Feature: Register_Page
   When  The user enters a valid "username" and "password" and "password confirmation"
       
       | username     | password  | password confirmation |
-      | Numpy@sdet101_13 | testsdet101 | testsdet101 |
+      | Numpy@sdet101_15 | testsdet101 | testsdet101 |
   Then The user should be redirected to Homepage with the message "New Account Created. You are logged in as <username>"
   When The user clicks on sign out
   Then The user is signed out
