@@ -15,7 +15,20 @@ public class DS_Algo_DSIntro {
 		home_page homePage = new home_page();
 		Intro_page dsPage = new Intro_page();
 
-	@Given("The user opens  DSAlgo portal Signinlink")
+	
+		@Given("The user opens the DS Algo portal for DSIntro")
+		public void the_user_opens_the_ds_algo_portal_for_ds_intro() {
+		    dsPage.dsalgoportal();
+		}
+
+		@Given("The user is on the home page  after logged in")
+		public void the_user_is_on_the_home_page_after_logged_in() {
+		   LoggerLoad.info("User has logged in");
+		}
+
+		
+		
+		/* @Given("The user opens  DSAlgo portal Signinlink")
 	public void the_user_opens_ds_algo_portal_link() {
 	    
 		LoggerLoad.info("Open DSAlgo portal ");
@@ -34,32 +47,31 @@ public class DS_Algo_DSIntro {
 	public void the_user_click_on_login_button() {
 		LoggerLoad.info("click on login button");
 
-	}
+	} */
 
 	
-	@When("The user clicks the {string} button in Data Structure Page introduction Panel")
+/*	@When("The user clicks the {string} button in Data Structure Page introduction Panel")
 	public void the_user_clicks_the_getstartedbutton_in_data_structure_page_introduction_panel(String string) {
 	    
 		
 		dsPage.introduction();
 
-	}
+	} */
+		
+		@When("The user clicks the Getting Started button in Data Structure Page introduction Panel")
+		public void the_user_clicks_the_getting_started_button_in_data_structure_page_introduction_panel() {
+		    dsPage.introduction();
+		}	
 
-	@Then("The user is on the homepage {string} after logged in")
-	public void the_user_is_on_the_homepage_after_logged_in(String string) {
-		LoggerLoad.info("User is in the datastructure introduction page");
-
-
-	}
-
+		
 	@When("The user clicks Time Complexity link")
 	public void the_user_clicks_time_complexity_link() {
 	    dsPage.complexityLink();
 
 	}
 
-	@Then("The user should be redirected to {string} page")
-	public void the_user_should_be_redirected_to_page(String string) {
+	@Then("The user should be redirected to Time Complexity page")
+	public void the_user_should_be_redirected_to_time_complexity_page() {
 		LoggerLoad.info("User is in the time complexity page");
 
 	}
@@ -106,18 +118,18 @@ public class DS_Algo_DSIntro {
 		dsPage.navigateTo("dspagetimecomplexity");
 	}
 
-	@When("The user clicks on the {string} link")
-	public void the_user_clicks_on_the_link(String string) {
+	@When("The user clicks on the Practice Questions link")
+	public void the_user_clicks_on_the_link() {
 		dsPage.practice_Questions_link();
 	}
 
 	 @Then ("The user should then be directed to Practice Questions Page")
 	public void the_user_should_then_be_directed_to_practice_questions_page() {
-		 
-	}
+		 LoggerLoad.info("User is on practice Questions");
+	} 
 	 
-	@Then("User navigates back to {string}")
-	public void user_navigates_back_to(String string) {
+	@Then("User navigates back to home page")
+	public void user_navigates_back_to() {
 		 homePage.homepageurl();
 	}
 
