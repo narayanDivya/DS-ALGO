@@ -7,7 +7,7 @@ import utilities.CrossBrowser;
 import utilities.LoggerLoad;
 
 public class Intro_page {
-	public WebDriver driver = CrossBrowser.getDriver();
+		public WebDriver driver = CrossBrowser.getDriver();
 	String url = ConfigReader.getApplicationUrl();
 	String homeUrl = ConfigReader.getHomePageUrl();
 	String signIn = ConfigReader.getSignInPage();
