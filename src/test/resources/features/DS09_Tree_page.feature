@@ -7,15 +7,19 @@ Feature: Tree page DS_ALGO
 	Then The user is redirected to the homepage
 	
 	@Tree001
-    Scenario: Validate "Overview of Trees"
+    Scenario: Validate "Tree page"
     Given The user is on the "home page" after logged in
     When The user select Tree item from the drop down menu
     Then The user should be directed to "Tree" Page
     When The user clicks on the Overview of Trees link
 	  Then The user should then be directed to Overview of Trees Page
+	  
+	  Scenario: Validate "Overview of Trees"
 	  Given The user is on the "Overview of Trees" after logged in
 	  When The user clicks "Try Here" button in "Overview of Trees" page
 	  Then The user should be redirected to a page having an tryEditor with a Run button to test
+	  When The user inputs an invalid python code
+	  Then The user is presented with an error message
 	  When The user inputs a python code
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for trees
@@ -76,6 +80,8 @@ Feature: Tree page DS_ALGO
 	  Then The user should then be directed to Binary Trees Page
 	  When The user clicks "Try Here" button in "Binary Trees" page
 	  Then The user should be redirected to a page having an tryEditor with a Run button to test
+	   When The user inputs an invalid python code
+	  Then The user is presented with an error message
 	  When The user inputs a python code
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for trees
@@ -112,6 +118,8 @@ Feature: Tree page DS_ALGO
 	  Then The user should then be directed to Binary Tree Traversals Page
 	  When The user clicks "Try Here" button in "Binary Tree Traversals" page
 	  Then The user should be redirected to a page having an tryEditor with a Run button to test
+	   When The user inputs an invalid python code
+	  Then The user is presented with an error message
 	  When The user inputs a python code
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for trees
@@ -149,6 +157,8 @@ Feature: Tree page DS_ALGO
 	  Then The user should then be directed to Binary search trees Page
 	  When The user clicks "Try Here" button in "Binary search trees" page
 	  Then The user should be redirected to a page having an tryEditor with a Run button to test
+	   When The user inputs an invalid python code
+	  Then The user is presented with an error message
 	  When The user inputs a python code
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for trees
@@ -165,5 +175,6 @@ Feature: Tree page DS_ALGO
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for trees
 	  And User navigates back to Tree page
+	  Then User navigates to home page
 	  
 	  

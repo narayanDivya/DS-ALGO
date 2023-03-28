@@ -86,7 +86,7 @@ public class tree_page {
 	}
 	public void enterInvalidcode() {
 		driver.findElement(enterCodeLine).sendKeys(invalidCode);
-		//driver.findElement(runButton).click();
+		driver.findElement(runButton).click();
 	}
 	public void clickRunButton()throws InterruptedException {
 		LoggerLoad.info("User clicked Run button");
@@ -103,28 +103,17 @@ public class tree_page {
 		
 	}
 	
-	/* public String getErrormsg() {
-		String errormsg = driver.switchTo().alert().getText();
-		driver.switchTo().alert().accept();
-		return errormsg;
-	}
+	public String getErrorText() throws InterruptedException
+    {
+ 	   Thread.sleep(2000);
+ 	   String errorMsg = driver.switchTo().alert().getText();
+ 	   LoggerLoad.info("Error Message Is : "+errorMsg);
+ 	   driver.switchTo().alert().accept();
+ 	   return errorMsg;
+    }
 	
-	public void findAlert()throws InterruptedException {
-	try {
-		     // Thread.sleep(1000);
-			driver.findElement(runButton).click();
-	}catch(UnhandledAlertException e) {
-		Alert alertPopUp = driver.switchTo().alert();
-		String alertmessage = alertPopUp.getText();
-		LoggerLoad.info("The alert message is "+alertmessage);
-		alertPopUp.accept();
-	}
-	}
-	public void clearCode() {
-		driver.findElement(enterCodeLine).click();
-		driver.findElement(enterCodeLine).sendKeys(Keys.CONTROL,"a");
-		driver.findElement(enterCodeLine).sendKeys(Keys.DELETE);
-	} */
+	
+	
 	
 		
 	public void navigateTo(String pagename) {

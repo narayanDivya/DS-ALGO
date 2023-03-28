@@ -8,15 +8,19 @@ Feature: Array page DS_ALGO
 	Then The user is redirected to the homepage
 	
 	@Array001
-    Scenario: Validate "Arrays in python"
+    Scenario: Validate "Arrays page"
     Given The user is on the "home page" after logged in
     When The user select Arrays item from the drop down menu
     Then The user should be directed to Array Page
     When The user clicks on the Arrays in python link
 	  Then The user should then be directed to Arrays in python Page
+	  
+	  Scenario: Validate "Arrays in python"
 	  Given The user is on the "Arrays in python" after logged in
 	  When The user clicks "Try Here" button in "Arrays in python" page
 	  Then The user should be redirected to a page having an tryEditor with a Run button to test
+	  When The user inputs an invalid python code
+	  Then The user is presented with an error message
 	  When The user inputs a python code
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for arrays
@@ -53,6 +57,8 @@ Feature: Array page DS_ALGO
 	  Then The user should then be directed to Applications of Array Page
 	  When The user clicks "Try Here" button in "Applications of Array" page
 	  Then The user should be redirected to a page having an tryEditor with a Run button to test
+	   When The user inputs an invalid python code
+	  Then The user is presented with an error message
 	  When The user inputs a python code
 	  And The user clicks the run button
 	  Then The user should be presented with Run output for arrays
@@ -87,3 +93,4 @@ Feature: Array page DS_ALGO
 	  And The user clicks the Run button
 	  Then The user should be presented with an error message
 	  And User navigates to Practice Questions page
+	  Then User navigates to home page
