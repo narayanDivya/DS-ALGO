@@ -3,6 +3,7 @@
 
 	import static org.testng.Assert.assertEquals;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 
@@ -72,7 +73,25 @@ import utilities.LoggerLoad;
 		    LoggerLoad.info("Try Editor");
 		}
 
-		
+		@When("The user inputs an invalid python code")
+		public void the_user_inputs_an_invalid_python_code() {
+			tree.enterInvalidcode();
+		}
+
+		@Then("The user is presented with an error message")
+		public void the_user_is_presented_with_an_error_message() throws InterruptedException {
+			try{
+				LoggerLoad.info("User gets the error message in an Alert  ");
+				String fetchError = tree.getErrorText();
+				String ExpectedError="SyntaxError: bad input on line 1";
+				LoggerLoad.info("Displayed Error Message  is "+fetchError);
+				assertEquals(fetchError,ExpectedError,"Invalid Syntax error message");
+				}
+				catch(NoSuchElementException e){			   
+				   }
+			tree.navigateTo("tryeditor");
+		}
+
 
 		@When("The user inputs a python code")
 		public void the_user_inputs_a_python_code() {
@@ -225,7 +244,10 @@ import utilities.LoggerLoad;
 			String title = tree.getTitle();
 			   assertEquals(title,"Implementation Of BST");
 		}
-
+		@Then("User navigates to home page")
+		public void user_navigates_to_home_page() {
+		    tree.navigateTo("homepage");
+		}
 
 	}
 
