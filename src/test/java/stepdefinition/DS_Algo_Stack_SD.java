@@ -180,36 +180,7 @@ public class DS_Algo_Stack_SD {
 	    //throw new io.cucumber.java.PendingException();
 	}
 
-	/*//@Stack_05
-	@Given("The user is in stack page having an tryEditor with a Run button to test")
-	public void the_user_is_in_stack_page_having_an_try_editor_with_a_run_button_to_test() {
-	    
-		LoggerLoad.info("STACK: The User in TryHere Editor page for invalid python code/operations");
-	    stackpage.StackTryHereUrl();
-	    //throw new io.cucumber.java.PendingException();
-	}
-	@When("The user gets invalid input from sheet Sheetname and RowNumber")
-	public void the_user_gets_invalid_input_from_sheet_and() {
-	    
-		LoggerLoad.info("STACK: User sends Invalid input to TryEditor textbox/Operatioms");
-		stackpage.TryEditorInvalidTextboxInput();
-		//throw new io.cucumber.java.PendingException();
-	}
-	@And("The user clicks on Run button after Entering invalid python code in stack tryEditor")
-	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_stack_try_editor() throws Throwable {
-	    
-		LoggerLoad.info("STACK: User clicks on Run button with InValid Python code/Operations");
-		
-		stackpage.ClickRunButton();
-		//Thread.sleep(2000);
-	    //throw new io.cucumber.java.PendingException();
-	}
-	@Then("The user should get the error message")
-	public void the_user_should_get_the_error_message() throws Throwable {
-		
-	   LoggerLoad.info("STACK: User gets the Error message after Invalid Python code/Operations");
-	    //throw new io.cucumber.java.PendingException();
-	} */
+	
 	
 //@Stack_06
 	@Given("The user is on the TryEditor page of Operation in Stack")
@@ -311,34 +282,7 @@ public class DS_Algo_Stack_SD {
 	    //throw new io.cucumber.java.PendingException();
 	}
 	
-	/*//@Stack_09
-	@Given("The user is in stack page having an tryEditor with a Run button to test implementation")
-	public void the_user_is_in_stack_page_having_an_tryEditor_with_a_Run_button_to_test_implementation() {
-	    
-	    LoggerLoad.info("STACK: The User in TryHere Editor page for invalid python code/Implementation");
-	    stackpage.StackTryHereUrl();
-	    //throw new io.cucumber.java.PendingException();
-	}
-	@When("The user gets invalid input from sheet Sheetname and RowNumber in implementation")
-	public void the_user_gets_invalid_input_from_sheet_Sheetname_and_RowNumber_in_implementation() {
-	    LoggerLoad.info("STACK: User sends Invalid input to TryEditor textbox/Implementation");
-		stackpage.TryEditorInvalidTextboxInput();
-		//throw new io.cucumber.java.PendingException();
-	}
-	@And("The user clicks on Run button after Entering invalid python code in stack tryEditor in implementation")
-	public void the_user_clicks_on_Run_button_after_Entering_invalid_python_code_in_stack_tryEditor_in_implementation() throws Throwable {
-	    LoggerLoad.info("STACK: User clicks on Run button with InValid Python code/Implementation");
-		stackpage.ClickRunButton();
-		Thread.sleep(2000);
-	    //throw new io.cucumber.java.PendingException();
-	}
 	
-	@Then("The user should get the error message on Stack implementation")
-	public void the_user_should_get_the_error_message_on_Stack_implementation() {
-	
-	    LoggerLoad.info("STACK: User gets the Error message after Invalid Python code/Implementation");
-	    //throw new io.cucumber.java.PendingException();
-	} */
 
 //@Stack_10
 	
@@ -431,35 +375,7 @@ public class DS_Algo_Stack_SD {
 	    //throw new io.cucumber.java.PendingException();
 	}
 	
-/*//@Stack_13
-	
-	@Given("The user is in stack page having an tryEditor with a Run button to test in Application")
-	public void The_user_is_in_stack_page_having_an_tryEditor_with_a_Run_button_to_test_in_Application() {
-		LoggerLoad.info("STACK: The User in TryHere Editor page for invalid python code/Application");
-	    stackpage.StackTryHereUrl();
-	    //throw new io.cucumber.java.PendingException();
-	}
-	
-	@When("The user gets invalid input from sheet Sheetname and RowNumber in Application")
-	public void The_user_gets_invalid_input_from_sheet_Sheetname_and_RowNumber_in_Application() {
-		LoggerLoad.info("STACK: User sends Invalid input to TryEditor textbox/Application");
-		stackpage.TryEditorInvalidTextboxInput();
-		//throw new io.cucumber.java.PendingException();
-	}
-	
-	@And("The user clicks on Run button after Entering invalid python code in stack tryEditor in Application")
-	public void The_user_clicks_on_Run_button_after_Entering_invalid_python_code_in_stack_tryEditor_in_Application() throws Throwable {
-		LoggerLoad.info("STACK: User clicks on Run button with InValid Python code/Application");
-		stackpage.ClickRunButton();
-		Thread.sleep(2000);
-	    //throw new io.cucumber.java.PendingException();
-	}
-	
-	@Then("The user should get the error message in Application")
-	public void The_user_should_get_the_error_message_in_Application() {
-		 LoggerLoad.info("STACK: User gets the Error message after Invalid Python code/Application");
-		    //throw new io.cucumber.java.PendingException();
-	} */
+
 	
 //@Stack_14
 	@Given("The user is on the Try Editor page Stack Application")

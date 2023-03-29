@@ -1,10 +1,10 @@
 @Tree
 Feature: Tree page DS_ALGO
   I want to use this template for my feature file
-	Scenario: User logs in
-	Given The user opens the DS Algo portal for tree
-	When The user enters valid username and password
-	Then The user is redirected to the homepage
+	#Scenario: User logs in
+	#Given The user opens the DS Algo portal for tree
+	#When The user enters valid username and password
+	#Then The user is redirected to the homepage
 	
 	@Tree001
     Scenario: Validate "Tree page"

@@ -1,15 +1,12 @@
 @Queue
 Feature: Implement Queue feature in DS_ALgo Project
 
-  Scenario: User logs in
-	Given The user opens the DS Algo portal for graph
-	When The user enters valid username and password
-	Then The user is redirected to the homepage
+  #Scenario: User logs in
+	#Given The user opens the DS Algo portal for graph
+	#When The user enters valid username and password
+	#Then The user is redirected to the homepage
   
- # Scenario: User redirect to HomePage after login
-  #  Given The user navigates to signIn page
-   # When The user enters login credentials and clicks Login button
-   # Then The user should be redirected to Homepage after logged in
+
 
   @Queue_01
   Scenario: The user is directed to "Queue" Page
@@ -37,19 +34,7 @@ Feature: Implement Queue feature in DS_ALgo Project
      When The user inputs a python code
 	  And The user clicks the run button
     Then The user should be presented with Run output
-   # When The user gets valid Python input for queue
-   ## And The user clicks on Run button after Entering valid python code in Queue tryEditor
-    #Then The user should be presented with Run output in Queue
-#
-  #Added
-  #@Queue_05
-  #Scenario: The user is able to get the error message for invalid syntax
-    #Given The user is in Queue page having an tryEditor with a Run button to test Implementation of Queue in Python
-    #When The user gets Invalid Python input for queue
-    #And The user clicks on Run button after Entering Invalid python code in Queue tryEditor
-    #Then The user should get the error message in Queue
-#
-  #Added
+   
   @Queue_06
   Scenario: The user is able to navigate to "Implementation using collections.deque" Page
    # Given The user is on the TryEditor page of Implementation of Queue in Python in Queue
@@ -71,16 +56,7 @@ Feature: Implement Queue feature in DS_ALgo Project
      When The user inputs a python code
 	  And The user clicks the run button
     Then The user should be presented with Run output
-#
-  #Added
-  #@Queue_09
-  #Scenario: The user is able to get the error message for invalid syntax
-    #Given The user is in queue page having an tryEditor with a Run button to test Implementation using collections.deque
-    #When The user gets Invalid Python input for queue
-    #And The user clicks on Run button after Entering Invalid python code in Queue tryEditor
-    #Then The user should get the error message in Queue
-#
-  #Added
+
   @Queue_10
   Scenario: The user is able to navigate to "Implementation using array" in queue Page
     #Given The user is on the TryEditor page of Implementation using collections.deque.
@@ -100,16 +76,7 @@ Feature: Implement Queue feature in DS_ALgo Project
     When The user inputs a python code
 	  And The user clicks the run button
     Then The user should be presented with Run output
-#
-  #Added
-  #@Queue_13
-  #Scenario: The user is able to get the error message for invalid syntax
-    #Given The user is in stack page having an tryEditor with a Run button to test in Implementation using array
-    #When The user gets Invalid Python input for queue
-    #And The user clicks on Run button after Entering Invalid python code in Queue tryEditor
-    #Then The user should get the error message in Queue
-#
-  #Added
+
   @Queue_14
   Scenario: The user is able to navigate to "Queue Operations" in queue Page
    # Given The user is on the TryEditor page of Implementation using array.
@@ -132,16 +99,7 @@ Feature: Implement Queue feature in DS_ALgo Project
      When The user inputs a python code
 	  And The user clicks the run button
     Then The user should be presented with Run output
-#
-  #Added
-  #@Queue_17
-  #Scenario: The user is able to get the error message for invalid syntax
-    #Given The user is in Queue page having an tryEditor with a Run button to test in Queue Operation
-    #When The user gets Invalid Python input for queue
-    #And The user clicks on Run button after Entering Invalid python code in Queue tryEditor
-    #Then The user should get the error message in Queue
-#
-  #Added
+
   @Queue_18
   Scenario: The user is able to navigate to "Practice Questions" in Queue Page
    # Given The user is on the Try Editor page Queue Operations
