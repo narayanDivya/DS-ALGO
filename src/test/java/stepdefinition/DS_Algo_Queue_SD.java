@@ -143,35 +143,7 @@ public class DS_Algo_Queue_SD {
 
 
 
-	//@Queue_05 invalid python code
-	/*@Given("The user is in Queue page having an tryEditor with a Run button to test Implementation of Queue in Python")
-	public void the_user_is_in_queue_page_having_an_try_editor_with_a_run_button_to_test_Implementation_of_Queue_in_Python() {
-		LoggerLoad.info("QUEUE: The User in TryHere Editor page for invalid python code/Implementation of Queue in Python");
-	    stackpage.StackTryHereUrl();
-	}
-	@When("The user gets Invalid Python input for queue")
-	public void the_user_gets_invalid_Python_input_for_queue() {
-		LoggerLoad.info("QUEUE: User sends Invalid input to TryEditor textbox/Implementation of Queue in Python");
-		stackpage.TryEditorInvalidTextboxInput();
-	}
-	@And("The user clicks on Run button after Entering Invalid python code in Queue tryEditor")
-	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_queue_try_editor() {
-		LoggerLoad.info("QUEUE: User clicks on Run button with InValid Python code/Implementation of Queue in Python");
-		
-		stackpage.ClickRunButton();
-	}
-	@Then("The user should get the error message in Queue")
-	public void the_user_should_get_the_error_message_in_Queue() throws InterruptedException {
-		try{
-			LoggerLoad.info("QUEUE: User gets the Error message after Invalid Python code/Implementation of Queue in Python");
-			String fetchError = array.getErrorText();
-			String ExpectedError="SyntaxError: bad input on line 2";
-			LoggerLoad.info("Displayed Error Message  is "+fetchError);
-			assertEquals(fetchError,ExpectedError,"Invalid Syntax error message");
-			}
-			catch(NoSuchElementException e){			   
-			   }
-	}*/
+	
 
 	//@Queue_06
 	@Given("The user is on the TryEditor page of Implementation of Queue in Python in Queue")
@@ -205,28 +177,7 @@ public class DS_Algo_Queue_SD {
 		assertEquals(implentationusingcollectiontitle,"Implementation using collections.deque");
 	}
 	
-	/*//@Queue_09 invalid python code
-	@Given("The user is in queue page having an tryEditor with a Run button to test Implementation using collections.deque")
-	public void the_user_is_in_queue_page_having_an_try_editor_with_a_run_button_to_test_implementation_using_collections_deque() {
-		
-		LoggerLoad.info("QUEUE: The User in TryHere Editor page for invalid python code/Implementation using collections.deque");
-	    stackpage.StackTryHereUrl();
-	}
-	@When("The user gets invalid input from sheet Sheetname and RowNumber in Implementation using collections.deque")
-	public void the_user_gets_invalid_input_from_sheet_sheetname_and_row_number_in_implementation_using_collections_deque() {
- 
-		LoggerLoad.info("QUEUE: User sends Invalid input to TryEditor textbox/Implementation using collections.deque");
-		stackpage.TryEditorInvalidTextboxInput();
-	}
-	@And("The user clicks on Run button after Entering invalid python code in stack tryEditor in Implementation using collections.deque")
-	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_stack_try_editor_in_implementation_using_collections_deque() {
-		LoggerLoad.info("QUEUE: User clicks on Run button with InValid Python code/Implementation using collections.deque");
-		stackpage.ClickRunButton();
-	}
-	@Then("The user should get the error message on queue Implementation using collections.deque")
-	public void the_user_should_get_the_error_message_on_queue_implementation_using_collections_deque() {
-	    LoggerLoad.info("QUEUE: User gets the Error message after Invalid Python code/Implementation using collections.deque");
-	}*/
+	
 
 	//@Queue_10
 	@Given("The user is on the TryEditor page of Implementation using collections.deque.")
@@ -253,27 +204,7 @@ public class DS_Algo_Queue_SD {
 	}
 	
 	
-	/*//@Queue_13
-	@Given("The user is in stack page having an tryEditor with a Run button to test in Implementation using array")
-	public void the_user_is_in_stack_page_having_an_try_editor_with_a_run_button_to_test_in_implementation_using_array() {
-		LoggerLoad.info("QUEUE: The User in TryHere Editor page for invalid python code/Implementation using array");
-	    stackpage.StackTryHereUrl();
-	}
-	@When("The user gets invalid input from sheet Sheetname and RowNumber in Implementation using array")
-	public void the_user_gets_invalid_input_from_sheet_sheetname_and_row_number_in_implementation_using_array() {
-		LoggerLoad.info("QUEUE: User sends Invalid input to TryEditor textbox/Implementation using array");
-		stackpage.TryEditorInvalidTextboxInput();
-	}
-	@And("The user clicks on Run button after Entering invalid python code in stack tryEditor in Implementation using array")
-	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_stack_try_editor_in_implementation_using_array() {
- 
-		LoggerLoad.info("QUEUE: User clicks on Run button with InValid Python code/Implementation using array");
-		stackpage.ClickRunButton();
-	}
-	@Then("The user should get the error message in Implementation using array")
-	public void the_user_should_get_the_error_message_in_implementation_using_array() {
-		LoggerLoad.info("QUEUE: User gets the Error message after Invalid Python code/Implementation using array");
-	}*/
+	
 
 	//@Queue_14
 	@Given("The user is on the TryEditor page of Implementation using array.")
@@ -298,28 +229,7 @@ public class DS_Algo_Queue_SD {
 		assertEquals(queueoperationtitle,"Queue Operations");
 	}
 	
-	/*//@Queue_17
-	@Given("The user is in Queue page having an tryEditor with a Run button to test in Queue Operation")
-	public void The_user_is_in_Queue_page_having_an_tryEditor_with_a_Run_button_to_test_in_Queue_Operation()
-	{
-		LoggerLoad.info("QUEUE: The User in TryHere Editor page for invalid python code/Queue Operations");
-		  stackpage.StackTryHereUrl();
-	}
 	
-	@When("The user gets invalid input from sheet Sheetname and RowNumber in Queue Operations")
-	public void the_user_gets_invalid_input_from_sheet_sheetname_and_row_number_in_queue_operations() {
-		LoggerLoad.info("QUEUE: User sends Invalid input to TryEditor textbox/Queue Operations");
-		stackpage.TryEditorInvalidTextboxInput();
-	}
-	@And("The user clicks on Run button after Entering invalid python code in stack tryEditor in Queue Operations")
-	public void the_user_clicks_on_run_button_after_entering_invalid_python_code_in_stack_try_editor_in_queue_operations() {
-		LoggerLoad.info("QUEUE: User clicks on Run button with InValid Python code/Queue Operations");
-		stackpage.ClickRunButton();
-	}
-	@Then("The user should get the error message in Queue Operations")
-	public void the_user_should_get_the_error_message_in_queue_operations() {
-		LoggerLoad.info("QUEUE: User gets the Error message after Invalid Python code/Queue Operations");
-	}*/
 
 	//@Queue_18
 	@Given("The user is on the Try Editor page Queue Operations")
