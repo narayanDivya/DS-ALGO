@@ -113,7 +113,16 @@ public class home_page {
 			return title;
 		}
 		
-		
+		public void Navigate_To_Home_Page()
+		{
+			driver.navigate().to(homeUrl);
+		}
 	
-
+		public void SendUserName_Password()
+		{
+			//Thread.sleep(2000); //temp code
+			driver.findElement(username).sendKeys("Numpy@sdet101"); //temp code
+			driver.findElement(password).sendKeys("testpassword"); //temp code
+			driver.findElement(loginbtn).click(); //temp code
+		}
 }
